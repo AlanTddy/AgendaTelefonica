@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#principal {
+    max-width: 920px;
+    margin: 0px auto;
+    font-family: "Trebuchet MS", Helvetica, 'Sans-serif';
+}
+
+.cabecalho {
+    width: 100%;
+    background: #00aeff;
+    float: left;
+}
+
+.cabecalho ul {
+    list-style: none;
+    display: block;
+}
+
+.cabecalho ul li {
+    padding: 5px 15px;
+    float: left;
+}
+
+.cabecalho ul li a {
+    cursor: pointer;
+    display: block;
+    padding: 15px 0px;
+    background: url(./img/separador.png) no-repeat left;
+    text-decoration: none;
+    color: white;
+}
+
+.cabecalho a:hover {
+    color: rgb(1, 85, 182);
+    transition: 1s;
+}
+
+.titulo {
+    text-align: center;
+    padding: 70px 0px 20px 0px;
+}
+
+#add-contato {
+    clear: both;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.display {
+    display: none;
+}
+
+#add-contato h2 {
+    margin-bottom: 5px;
+}
+
+#add-contato input {
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+
+#mensagemErro {
+    margin: 5px auto;
+    border: 1px solid rgb(255, 72, 72);
+    background: rgba(243, 0, 20, 0.363);
+    color: rgb(80, 17, 17);
+    border-radius: 10px;
+    width: 96%;
+    padding: 15px;
+}
+
+.cancelar {
+    border: 1px solid grey;
+    border-radius: 7px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20%;
+    background: rgb(216, 18, 18);
+    color: white;
+    cursor: pointer;
+}
+
+.cancelar:hover {
+    background: rgb(243, 40, 40);
+    transition: 0.3s;
+    color: rgb(102, 15, 15);
+}
+
+.salvar {
+    margin-left: 15px;
+    border: 1px solid grey;
+    border-radius: 7px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 20%;
+    background: rgb(22, 105, 201);
+    color: white;
+    cursor: pointer;
+}
+
+.salvar:hover {
+    transition: 0.3s;
+    background: rgb(43, 142, 255);
+    color: rgb(16, 58, 105);
+}
+
+#lista {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#lista th, td {
+    padding: 7px;
+}
+
+tbody tr:hover {
+    background: rgb(187, 187, 187);
+}
+
+#lista th {
+    letter-spacing: 2px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+}
+
+.campoInvalido {
+    border: 1.5px solid rgb(219, 46, 46);
+}
+
+.botaoDelete {
+    color: white;
+    background: red;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.botaoEditar {
+    margin-left: 5px;
+    color: white;
+    background: blue;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda Telefônica</title>
+</head>
+
+<body>
+    <div id="principal">
+        <div class="cabecalho">
+            <ul>
+                <li><a id="telaInicio">Lista de Contatos</a></li>
+                <li><a id="buttonNovoContato">Adicionar Contato</a></li>
+            </ul>
+        </div>
+        <h1 class="titulo">AGENDA TELEFÔNICA</h1>
+        <div id="add-contato" class="display">
+            <form action="" id="formContato">
+                <h2>Novo Contato</h2>
+                <div>
+                    <label for="nomeContato" class="nomeContato"><b>Nome: *</b><br></label>
+                    <input type="text" name="novoContato" id="nomeContato">
+                </div>
+                <div>
+                    <label for="sobrenomeContato" class="sobrenomeContato"><b>Sobrenome: </b><br></label>
+                    <input type="text" name="sobrenomeContato" id="sobrenomeContato">
+                </div>
+                <div>
+                    <label for="numeroContato" class="numeroContato"><b>Número: *</b><br></label>
+                    <input type="tel" name="numeroContato" id="numeroContato">
+                </div>
+                <div>
+                    <label for="novoEmail" class="novoEmail"><b>E-mail: </b> <br></label>
+                    <input type="email" name="novoEmail" id="emailContato">
+                </div>
+                <div>
+                    <label for="novaObservacao" class="novaObservacao"><b> Observações: </b><br></label>
+                    <input type="text" name="novaObservacao" id="obsContato" placeholder="  Pessoal    //    Trabalho">
+                </div>
+                <div id="mensagemErro" class="display">
+                    Mensagem de erro!
+                </div>
+                <div>
+                    <button type="button" class="cancelar" id="buttonCancelar">Cancelar</button>
+                    <button type="submit" class="salvar">Salvar</button>
+                </div>
+            </form>
+        </div>
+
+        <table id="lista">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Número</th>
+                    <th>E-mail</th>
+                    <th>Observações</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaContatos">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="externo.js"></script>
+</body>
+
+</html>
